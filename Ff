@@ -1,0 +1,67 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Ez Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Forsaken",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Auto block!",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RonitScripts/Befr/refs/heads/main/Imfr"))()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Sigmasaken(key in discord)",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/sigmaboy-sigma-boy/Stamina-Settings-and-ESP/refs/heads/main/SigmasakenLoader"))()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Hitbox expand!",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/broimnothim/gg/refs/heads/main/gg'))()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Ivanneta script (needs key)",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ivannetta/ShitScripts/main/forsaken.lua"))()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Ringta",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/wefwef127382/forsakenloader.github.io/refs/heads/main/RINGTABUBLIK.lua"))()
+      		print("button pressed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Info",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "Info",
+	Content = "Youtube = Ronit Scripts                                                  Discord = https://discord.gg/hwJWB6tfrv",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+      		print("button pressed")
+  	end    
+})
